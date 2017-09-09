@@ -1,5 +1,5 @@
 FROM sjd300671/minimal-java
-EXPOSE 8080
+EXPOSE 28080 ## Changed for testing
 ADD target/docker-health-0.0.1-SNAPSHOT.jar app.jar
 RUN sh -c 'touch /app.jar'
 ENV JAVA_OPTS=""
